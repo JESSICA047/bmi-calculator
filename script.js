@@ -27,6 +27,8 @@ function calculateBMI() {
   result.textContent = `Your BMI is ${bmi.toFixed(2)} (${category}).`;
 }
 
+
+
 document.getElementById("calculate").addEventListener("click", calculateBMI);
 
 const genders = document.querySelectorAll(".gender");
