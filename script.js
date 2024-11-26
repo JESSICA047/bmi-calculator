@@ -1,5 +1,5 @@
 function calculateBMI() {
-  const gender = document.querySelector(".gender.selected"); // Get the selected gender
+  const gender = document.querySelector(".gender .selected").value; // Get the selected gender
   const age = document.getElementById("age").value;
   const height = parseFloat(document.getElementById("height").value);
   const weight = parseFloat(document.getElementById("weight").value);
@@ -26,7 +26,6 @@ function calculateBMI() {
 
   result.textContent = `Your BMI is ${bmi.toFixed(2)} (${category}).`;
 }
-
 
 
 document.getElementById("calculate").addEventListener("click", calculateBMI);
